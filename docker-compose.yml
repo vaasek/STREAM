@@ -1,0 +1,30 @@
+# Запуск на Linux. network_mode: host нужен, чтобы WebRTC получил реальные UDP-порты.
+# На Docker Desktop для Windows/macOS этот режим не подходит — там запускайте npm start.
+
+services:
+  streamon:
+    build: .
+    restart: unless-stopped
+    network_mode: host
+    env_file:
+      - .env
+    environment:
+      DATA_DIR: /opt/streamon/data
+    volumes:
+      - ./data:/opt/streamon/data
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    network_mode: host
+    profiles: ["https"]
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  caddy-data:
+  caddy-config:

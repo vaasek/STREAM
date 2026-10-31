@@ -1,0 +1,15 @@
+node_modules/
+web/dist/
+data/
+.env
+STREAM.zip
+*.log
+.DS_Store
+deploy/tls/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/keystore.properties
+android/keystore/*.jks

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.streamon.app
+Exec=/usr/bin/ru.streamon.app
+Name=Streamon
+Name[ru]=Streamon
+
+[X-Application]
+Permissions=Internet;WebView;Audio;Camera;Microphone
+OrganizationName=ru.streamon
+ApplicationName=app
+ExecDBus=/usr/bin/ru.streamon.app

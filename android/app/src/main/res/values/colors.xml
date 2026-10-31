@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#090C10</color>
+    <color name="bg_2">#10161D</color>
+    <color name="card">#17202A</color>
+    <color name="line">#2A3848</color>
+    <color name="ink">#E8EEF6</color>
+    <color name="muted">#8EA0B5</color>
+    <color name="faint">#66788C</color>
+    <color name="mint">#3EE0A2</color>
+    <color name="mint_ink">#062117</color>
+    <color name="mint_soft">#12382C</color>
+    <color name="blue">#8EBCFF</color>
+    <color name="danger">#FF6B7D</color>
+    <color name="amber">#FFB020</color>
+    <color name="scrim">#CC090C10</color>
+</resources>

@@ -1,0 +1,25 @@
+{
+  "name": "streamon-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mediasoup": "^3.31.0",
+    "socket.io": "^4.8.1"
+  },
+  "allowScripts": {
+    "mediasoup@3.31.0": true
+  }
+}

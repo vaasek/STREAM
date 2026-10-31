@@ -1,0 +1,18 @@
+{
+  "name": "streamon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Самостоятельно размещаемый сервер видеоконференций и трансляций",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix web",
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm --prefix server run dev\" \"npm --prefix web run dev\"",
+    "build": "npm run build --prefix web",
+    "start": "npm run build --prefix web && npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
